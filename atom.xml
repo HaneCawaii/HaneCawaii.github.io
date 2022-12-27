@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-27T06:09:34.174Z</updated>
+  <updated>2022-12-27T07:01:13.543Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/posts/5c2fafc7.html"/>
     <id>http://example.com/posts/5c2fafc7.html</id>
     <published>2022-12-27T05:59:37.000Z</published>
-    <updated>2022-12-27T06:09:34.174Z</updated>
+    <updated>2022-12-27T07:01:13.543Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>第一篇文章</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="为什么写博客"><a href="#为什么写博客" class="headerlink" title="为什么写博客"></a>为什么写博客</h2><hr><h3 id="工作与学习的笔记，方便查阅"><a href="#工作与学习的笔记，方便查阅" class="headerlink" title="工作与学习的笔记，方便查阅"></a>工作与学习的笔记，方便查阅</h3><p>每次学习与实践后，第一时间把自己的实践经验和遇到的坑记录下来，下次用的时候直接查阅，而不是去网上再找答案，因为网上的资料很杂，找到正确答案也需要不少成本，尤其时间成本，如果用错误资料去试验可能还会造成别的损失；而且下一次的实践如果遇到新的问题或情况，或学到新的知识点、对第一次的实践又更深的认识或理论学习，都可以继续扩充完善这篇文章，从而不断迭代更新；</p><p>这类文章大概有如下方面：</p><blockquote><p>环境部署（Python、Java、Mysql等）<br>开源软件的安装与使用（Kafka、Redis、K8s等）<br>常用代码或命令（SQL、Linux指令、爬虫常用代码等）<br>工具（Pycharm、VSCode等）</p></blockquote><h3 id="实践中的理论"><a href="#实践中的理论" class="headerlink" title="实践中的理论"></a>实践中的理论</h3><p>深入学习理解工作中使用的技术，比如Docker的层级镜像、设计模式、算法、架构对比与选型等，从而加深对技术的理解与思考。</p><h3 id="自学积累"><a href="#自学积累" class="headerlink" title="自学积累"></a>自学积累</h3><p>自学是自我提升必不可少的环节，也是为工作服务的最佳途径，尤其是计算机基础知识，我们对某个技术进行深层探索时，最后都会回归到计算机基础知识中，比如mysql的索引原理是数据结构中的二叉树、kafka的数据传输是基于计算机网络中的TCP协议的。所以，万丈高楼平地起,勿在浮沙筑高台，最基础的知识才是计算机科学与技术工作者最应该具备的。</p><blockquote><p>计算机基础：数据结构、网络、算法、Linux、数据库；<br>语言：GO、Python、Java、Javascript，深入学习语法糖、语言风格、语言优劣势、多线程并发等；<br>兴趣爱好：根据兴趣学，比如我的计划中，关于NLP的（Tenserflow、keras、bert等），关于DevOps的（K8S、Git、PYPI等）、关于大数据架构与数据仓库的（Hbase、Flink）、关于前端的（vue、node）</p></blockquote><h2 id="奋翮云霄苦不早，敛翼樊笼方悔迟"><a href="#奋翮云霄苦不早，敛翼樊笼方悔迟" class="headerlink" title="奋翮云霄苦不早，敛翼樊笼方悔迟"></a>奋翮云霄苦不早，敛翼樊笼方悔迟</h2><h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://ts1.cn.mm.bing.net/th/id/R-C.2f0fd632297706473dba624f8c4b63ac?rik=BkmwyYHrMCLcCg&riu=http://img.pconline.com.cn/images/upload/upc/tx/photoblog/1201/03/c11/10133182_10133182_1325599812410.jpg&ehk=tvcgD5LWHxRohXyb5WI1Q9BAXoNV7iy2k7k6ZJz2lOc=&risl=&pid=ImgRaw&r=0" alt="奋翮云霄苦不早，敛翼樊笼方悔迟"></h2>]]></content>
     
     
       
