@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-28T14:08:19.904Z</updated>
+  <updated>2022-12-29T09:33:52.520Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>13届蓝桥杯模拟赛错题集-1</title>
+    <link href="http://example.com/posts/e89eafd5.html"/>
+    <id>http://example.com/posts/e89eafd5.html</id>
+    <published>2022-12-29T08:49:09.000Z</published>
+    <updated>2022-12-29T09:33:52.520Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="第一题-数据类型检测"><a href="#第一题-数据类型检测" class="headerlink" title="第一题 数据类型检测"></a>第一题 数据类型检测</h2><hr><p><strong>介绍</strong><br>在前端开发中，js 有各种各样的数据类型，数据类型检测是每个开发者都必须掌握基础知识。数据类型检测的方法也有很多种，本题将封装一个通用的数据类型检测函数。</p><p><strong>准备</strong><br>本题已经内置了初始代码，打开实验环境，目录结构如下：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">└── main.js</span><br></pre></td></tr></table></figure><p>其中：</p><p><font color=LightPink>main.js</font>是待补充代码的 js 文件。<br>在<font color=LightPink>main.js</font>文件中封装好方法以后，可以尝试在该文件中手动调用已经封装好的方法，通过命令<font color=LightPink> node main.js</font>来执行文件，打印对应的日志。</p><p><strong>目标</strong><br>完善<font color=LightPink>main.js</font>中<font color=LightPink>getType</font>函数中的 TODO 部分，返回传入值的对应数据类型。</p><p>传入值以及<font color=LightPink>getType</font>函数返回值（大小写可忽略）按照如下方式对应：</p><table><thead><tr><th align="center">传入值</th><th align="center">返回值</th></tr></thead><tbody><tr><td align="center">‘s’</td><td align="center">string</td></tr><tr><td align="center">0</td><td align="center">number</td></tr><tr><td align="center">false</td><td align="center">boolean</td></tr><tr><td align="center">undefined</td><td align="center">undefined</td></tr><tr><td align="center">Symbol()</td><td align="center">symbol</td></tr><tr><td align="center">function</td><td align="center">fn(){}function</td></tr><tr><td align="center">123n</td><td align="center">bigint</td></tr><tr><td align="center">null</td><td align="center">null</td></tr><tr><td align="center">{}</td><td align="center">object</td></tr><tr><td align="center">[]</td><td align="center">array</td></tr><tr><td align="center">new Date</td><td align="center">date</td></tr><tr><td align="center">new Map</td><td align="center">map</td></tr><tr><td align="center">new Set</td><td align="center">set</td></tr><tr><td align="center">/a/</td><td align="center">regexp</td></tr></tbody></table><p><strong>测试用例</strong></p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例</span><br><span class="line">const testArr = [</span><br><span class="line">  &quot;s&quot;,</span><br><span class="line">  0,</span><br><span class="line">  false,</span><br><span class="line">  undefined,</span><br><span class="line">  Symbol(),</span><br><span class="line">  function () &#123;&#125;,</span><br><span class="line">  123n,</span><br><span class="line">  null,</span><br><span class="line">  &#123;&#125;,</span><br><span class="line">  [],</span><br><span class="line">  new Date(),</span><br><span class="line">  new Map(),</span><br><span class="line">  new Set(),</span><br><span class="line">  /a/,</span><br><span class="line">];</span><br><span class="line">const result = testArr.map((item) =&gt; getType(item));</span><br><span class="line">console.log(&quot;得到的结果：&quot;, result);</span><br><span class="line">/*</span><br><span class="line">得到的结果：</span><br><span class="line"> [</span><br><span class="line">    &#x27;string&#x27;,  &#x27;number&#x27;,</span><br><span class="line">    &#x27;boolean&#x27;, &#x27;undefined&#x27;,</span><br><span class="line">    &#x27;symbol&#x27;,  &#x27;function&#x27;,</span><br><span class="line">    &#x27;bigint&#x27;,  &#x27;null&#x27;,</span><br><span class="line">    &#x27;object&#x27;,  &#x27;array&#x27;,</span><br><span class="line">    &#x27;date&#x27;,    &#x27;map&#x27;,</span><br><span class="line">    &#x27;set&#x27;,     &#x27;regExp&#x27;</span><br><span class="line">  ]</span><br><span class="line">*/</span><br></pre></td></tr></table></figure><p><strong>规定</strong></p><ol><li>请勿修改文件路径，文件名，对象名和函数名。</li><li><em>只能在规定区域进行代码编写。</em></li></ol><p><strong>判分标准</strong></p><ul><li>本题完全实现题目目标得满分，否则得 0 分。</li></ul><h3 id="题解代码"><a href="#题解代码" class="headerlink" title="题解代码"></a>题解代码</h3><hr><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function getType(data) &#123;</span><br><span class="line">  // TODO：待补充代码</span><br><span class="line">  if(typeof(data)===&#x27;object&#x27;)&#123;</span><br><span class="line">    return Object.prototype.toString.call(data).slice(8,-1);</span><br><span class="line">  &#125;else&#123;</span><br><span class="line">    return typeof(data)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="错误代码"><a href="#错误代码" class="headerlink" title="错误代码"></a>错误代码</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function getType(data) &#123;</span><br><span class="line">  // TODO：待补充代码</span><br><span class="line">    return typeof(data)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>粗心大意，未对<font color=LightPink>Object</font>类型进行更深一步的判断，导致检测不通过</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>第13届蓝桥杯Web前端组省赛第8题-购物车</title>
