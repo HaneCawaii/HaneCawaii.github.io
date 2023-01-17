@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-01-01T07:31:38.420Z</updated>
+  <updated>2023-01-01T07:34:49.588Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>node创建第一个服务器实例</title>
+    <title>node创建一个服务器实例</title>
     <link href="http://example.com/posts/490a531c.html"/>
     <id>http://example.com/posts/490a531c.html</id>
     <published>2023-01-01T07:21:25.000Z</published>
-    <updated>2023-01-01T07:31:38.420Z</updated>
+    <updated>2023-01-01T07:34:49.588Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr><p><strong>如下所示</strong></p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//导入http模块</span><br><span class="line">const http = require(&#x27;http&#x27;)</span><br><span class="line">//创建web服务器实例</span><br><span class="line">const server = http.createServer()</span><br><span class="line">//为服务器实例绑定request事件,监听客户端需求</span><br><span class="line">server.on(&#x27;request&#x27;, (req, res) =&gt;&#123;</span><br><span class="line">    const str=`你好，世界！`</span><br><span class="line">    //发送的内容包含中文，需要手动设置内容的编码格式</span><br><span class="line">    res.setHeader(&#x27;Content-Type&#x27;,&#x27;text/html;charset=utf-8&#x27;)</span><br><span class="line">    res.end(str);</span><br><span class="line">&#125;)</span><br><span class="line">//启动服务器</span><br><span class="line">server.listen(8081, ()=&gt; &#123;</span><br><span class="line">    console.log(&#x27;Serve running at http://127.0.0.1:8081&#x27;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -33,6 +33,8 @@
     
     
     
+    
+    <category term="NodeJs" scheme="http://example.com/tags/NodeJs/"/>
     
   </entry>
   
